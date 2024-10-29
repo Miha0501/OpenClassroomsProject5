@@ -1,4 +1,5 @@
 import logoKasa from '../assets/logo/logoKasa.png'
+import '../sass/Header.scss'
 
 const Header = () => {
     return (
