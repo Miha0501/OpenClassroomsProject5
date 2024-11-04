@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 4rem 2rem 4rem;
+
+    @media (max-width: 767px) {
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 210px;
+        max-height: 68px;
+
+        @media (max-width: 767px) {
+            max-width: 145px;
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 57px;
+        font-size: 24px;
+        list-style: none;
+        font-weight: 500;
+        padding: 0;
+
+        @media (max-width: 767px) {
+            display: flex;
+            gap: 26px;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+            &.underline {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+}

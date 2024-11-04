@@ -5,22 +5,20 @@ import About from "../pages/About"
 import Error from "../pages/Error"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Data from "../data/data.json"
+// import Data from "../data/data.json"
 
 function App() {
 
   return (
-
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
-
   )
 }
 
