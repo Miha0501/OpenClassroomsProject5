@@ -8,10 +8,10 @@ const Header = () => {
             <img src={logoKasa} alt="Logo du site Kasa"/>
             <nav>
                 <ul>
-                    <NavLink to="/" className={({isActive}) =>(isActive ? "underline":"")}>
+                    <NavLink to="/">
                     <li>Accueil</li>
                     </NavLink>
-                    <NavLink to="/about" className={({isActive}) =>(isActive ? "underline":"")}>
+                    <NavLink to="/about">
                     <li>A propos</li>
                     </NavLink>
                 </ul>

@@ -1,4 +1,5 @@
-import '../sass/Error.scss'
+import '../../sass/Error.scss'
+import { Link } from 'react-router-dom';
 
 const Error = () => {
     return (
@@ -8,7 +9,7 @@ const Error = () => {
                 <div className="error-message">
                     <span>Oups! La page que </span><span>vous demandez n'existe pas.</span>
                     </div>
-                <div className='go-homepage'>Retourner sur la page d’accueil</div>
+                <Link to='/' className='go-homepage'>Retourner sur la page d’accueil</Link>
             </div>
         </div>
     )
