@@ -11,13 +11,7 @@
   min-height: 100vh;
   box-sizing: border-box;
 
-   .home-page {
-     flex: 1;
-     padding-inline: 4rem;
-     @media (max-width:767px) {
-      padding-inline: 1rem;
-     }
-   }
+
    .about-page {
     flex: 1;
     padding-inline: 4rem;

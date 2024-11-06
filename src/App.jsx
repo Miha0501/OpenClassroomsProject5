@@ -5,7 +5,7 @@ import About from "./components/pages/About"
 import Error from "./components/pages/Error"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-// import Data from "../data/data.json"
+import Card from "./components/Card"
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="card/:id" element={<Card />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
