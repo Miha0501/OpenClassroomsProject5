@@ -1,5 +1,5 @@
-import '../sass/Footer.scss'
-import logoFooter from '../assets/logo/logoFooter.png'
+import '../sass/footer.scss';
+import logoFooter from '../assets/logo/logoFooter.png';
 
 
 const Footer = () => {

@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.collapse {
+    margin: 2rem 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80%;
+    @media (max-width:767px) {
+        margin:0;
+        gap: 0;
+        width: 100%;
+    }
+  
+    .collapse-title {
+      background-color: $main-color;
+      color: $text-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      cursor: pointer;
+  
+      h2 {
+        font-size: 18px;
+        @media (max-width:767px) {
+            font-size: 12px;
+        }
+      }
+  
+      .arrow {
+        width: 15px;
+        height: 15px;
+        border: solid $text-color;
+        border-width: 0 3px 3px 0;
+        transform: rotate(-135deg);
+        transition: transform 0.3s ease;
+  
+        &.open {
+          transform: rotate(-315deg); // pointer vers le haut avec la flèche
+        }
+      }
+    }
+  
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 1rem;
+  
+      &.show {
+        background-color: #F6F6F673;
+        ;
+        max-height: 100px; 
+        padding: 1rem;
+      }
+    }
+  }

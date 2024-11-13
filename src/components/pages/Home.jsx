@@ -3,7 +3,7 @@ import homeImage from '../../assets/banner-images/image-banner-accueil.png';
 import AllCards from '../AllCards';
 import Card from "../Banner";
 import cards from '../../data/cards.json';
-import '../../sass/home.scss'
+import '../../sass/home.scss';
 
 const Home = () => {
     return (

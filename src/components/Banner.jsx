@@ -1,4 +1,4 @@
-import '../sass/banner.scss'
+import '../sass/banner.scss';
 
 const Banner = ({ image, part1, part2 }) => {
     return (

@@ -1,5 +1,5 @@
-import '/src/sass/thumb.scss'
-import cards from "../data/cards.json"
+import '/src/sass/thumb.scss';
+import cards from '../data/cards.json';
 import { Link } from 'react-router-dom';
 
 const AllCards = ({cards}) => {
