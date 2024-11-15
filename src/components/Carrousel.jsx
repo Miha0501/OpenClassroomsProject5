@@ -23,15 +23,18 @@ function Carrousel({images}) {
   return (
     <div className="carrousel">
       {images.length > 0 && (
-        <>
-          <img src={images[activePicture]} alt={`Image ${activePicture + 1}`} className="carrousel__image"/>
-          <button className="carrousel__button carrousel__button--prev" onClick={prevSlide}>
+        <div>
+          <img src={images[activePicture]} alt={`Image ${activePicture + 1}`} className="carrousel-image"/>
+          <button className="carrousel-button carrousel-button--prev" onClick={prevSlide}>
             &lt;
           </button>
-          <button className="carrousel__button carrousel__button--next" onClick={nextSlide}>
+          <button className="carrousel-button carrousel-button--next" onClick={nextSlide}>
             &gt;
           </button>
-        </>
+          <div className="carrousel-counter">
+            {activePicture + 1} / {images.length}
+          </div>
+        </div>
       )}
     </div>
   );

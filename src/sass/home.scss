@@ -1,7 +1,6 @@
 .home-page {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
     .banner-container {
         flex: 1;
@@ -18,13 +17,15 @@
         align-items: center;
         flex:1;
         gap: 20px;
-        padding: 4rem;
+        padding: 2rem;
+        margin: 2rem 4rem 2rem 4rem;
         background-color: rgb(245 245 245);
         border-radius: 10px;
-        padding-inline: 4rem;
         @media (max-width: 767px) {
             grid-template-columns: 1fr;
             padding: 1rem;
+            margin:0;
+            background-color: white;
         }
 
         img {
