@@ -2,7 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import cards from '../data/cards.json';
 import Carrousel from '../components/Carrousel';
-import Tags from '../components/Tags'
+import Tags from '../components/Tags';
 import Collapse from '../components/Collapse';
 import '../sass/card.scss';
 import StarRating from '../components/StarRating';
@@ -49,7 +49,7 @@ const Card = () => {
             </div>
             <div className="card-collapse">
                 <Collapse title="Description"><p>{card.description}</p></Collapse>
-                <Collapse title="Equipments"><ul className="card-equipments">
+                <Collapse title="Equipements"><ul className="card-equipments">
                     {card.equipments.map((equipment, index) => (<li key={index}>{equipment}</li>))}
                 </ul></Collapse>
             </div>

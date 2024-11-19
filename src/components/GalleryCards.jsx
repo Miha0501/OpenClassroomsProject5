@@ -13,6 +13,6 @@ const GalleryCards = ({cards}) => {
     );
 }
 
-// création d'une Card pour chaque logement selon son id
+// créer une card pour chaque logement selon son id
 
 export default GalleryCards;

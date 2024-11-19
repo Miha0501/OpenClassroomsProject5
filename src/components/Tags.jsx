@@ -1,4 +1,3 @@
-
 const Tags = ({card}) => {
     return (
         <div className="tags">
