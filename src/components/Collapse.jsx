@@ -4,7 +4,7 @@ import '../sass/collapse.scss';
 function Collapse({ title, children }) {
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleCollapse = () => setIsOpen(!isOpen);
+    const handleCollapse = () => setIsOpen(!isOpen); // Ouvrir ou fermer le collapse au click
 
     return (
         <div className="collapse">

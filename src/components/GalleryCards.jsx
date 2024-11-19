@@ -1,8 +1,8 @@
-import '/src/sass/thumb.scss';
-import cards from '../data/cards.json';
+import '/src/sass/thumbCard.scss';
+import '../data/cards.json';
 import { Link } from 'react-router-dom';
 
-const AllCards = ({cards}) => {
+const GalleryCards = ({cards}) => {
     return (
         cards.map((card) => (
             <Link to={`/card/${card.id}`} className="thumb" key={card.id}>
@@ -13,5 +13,6 @@ const AllCards = ({cards}) => {
     );
 }
 
+// création d'une Card pour chaque logement selon son id
 
-export default AllCards;
+export default GalleryCards;

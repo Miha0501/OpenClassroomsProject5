@@ -1,24 +1,27 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import cards from '../data/cards.json';
-import Carrousel from './Carrousel';
+import Carrousel from '../components/Carrousel';
+import Tags from '../components/Tags'
+import Collapse from '../components/Collapse';
 import '../sass/card.scss';
-import Collapse from './Collapse';
+import StarRating from '../components/StarRating';
 
-const findCardId = (id) => {
-    return cards.find((card) => card.id === id)
-
-}
 const Card = () => {
+    // extraction de l'id de l'URL, identification du logement cliqué par l'utilisateur et gestion des erreurs
     const { id } = useParams();
-    const navigate=useNavigate();
-    const card = findCardId(id);
-
+    const card = cards.find((card) => card.id === id);
+    const navigate = useNavigate();
+    
     useEffect(() => {
-    if(!card) {
-        navigate('');
+        if (!card) {
+            navigate('/error');
+        }
+    }, [card, navigate]);
+
+    if (!card) {
+        return null;
     }
-    });
 
     return (
         <div className="card-page">
@@ -29,13 +32,7 @@ const Card = () => {
                         <h1>{card.title}</h1>
                         <h2>{card.location}</h2>
                     </div>
-                    <div className="tags">
-                        {card.tags.map((tag) => (
-                            <div key={`${card.id}-${tag}`} className="tag">
-                                {tag}
-                            </div>
-                        ))}
-                    </div>
+                    <Tags card={card} />
                 </div>
                 <div className="host-and-rating">
                     <div className="host">
@@ -47,13 +44,7 @@ const Card = () => {
                             <img src={card.host.picture} alt={card.host.name} />
                         </div>
                     </div>
-                    <div className="star-rating">
-                        {Array.from({ length: 5 }, (_, index) => (
-                            <span key={index} className={index < card.rating ? 'star-filled' : 'star-empty'}>
-                                {index < card.rating ? '★' : '☆'}
-                            </span>
-                        ))}
-                    </div>
+                    <StarRating card={card} />
                 </div>
             </div>
             <div className="card-collapse">

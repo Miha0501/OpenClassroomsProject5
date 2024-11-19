@@ -6,7 +6,7 @@
     gap: 10px;
     width: 100%;
     height: auto;
-    padding: 2rem 4rem 2rem 4rem;
+    padding: 0 4rem 2rem 4rem;
     @media (max-width: 767px) {
         padding: 1rem;
     }
@@ -15,6 +15,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        font-family: $font-family;
         @media (max-width: 767px) {
             display: flex;
             flex-direction: column;
@@ -30,7 +31,6 @@
         h1 {
             color: $main-color;
             font-size: 36px;
-            font-family: $font-family;
             font-weight: 500;
             @media (max-width: 767px) {
                 font-size: 18px;
@@ -40,7 +40,6 @@
         h2 {
             font-size: 18px;
             font-weight: 500;
-            font-family: $font-family;
             @media (max-width: 767px) {
                 font-size: 14px;
             }
@@ -55,7 +54,6 @@
 
         .tag {
             background-color: $main-color;
-            font-family: $font-family;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -106,7 +104,6 @@
                 align-items: flex-end;
                 font-size: 14px;
                 color: $main-color;
-                font-family: $font-family;
                 font-size: 18px;
             }
         }
@@ -160,7 +157,7 @@
             }
 
             &.show {
-                padding-left: 10px;
+                padding: 10px;
             }
         }
     }
