@@ -1,8 +1,8 @@
 import Banner from '../components/Banner';
 import homeImage from '../assets/banner-images/image-banner-accueil.png';
-import GalleryCards from '../components/GalleryCards';
-import Card from "../components/Banner";
-import cards from '../data/cards.json';
+import GalleryAccommodations from '../components/GalleryAccommodations';
+import Accommodation from "../components/Banner";
+import accommodations from '../data/accommodations.json';
 import '../sass/home.scss';
 
 const Home = () => {
@@ -16,8 +16,8 @@ const Home = () => {
                 />
             </div>
             <div className="gallery">
-                <GalleryCards cards={cards} />
-                <Card/>
+                <GalleryAccommodations accommodations={accommodations} />
+                <Accommodation/>
             </div>
         </div>
     )

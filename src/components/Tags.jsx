@@ -1,8 +1,8 @@
-const Tags = ({card}) => {
+const Tags = ({accommodation}) => {
     return (
         <div className="tags">
-        {card.tags.map((tag) => (
-            <div key={`${card.id}-${tag}`} className="tag">
+        {accommodation.tags.map((tag) => (
+            <div key={`${accommodation.id}-${tag}`} className="tag">
                 {tag}
             </div>
         ))}

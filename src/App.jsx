@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Card from "./pages/Card";
+import Accommodation from "./pages/Accommodation";
 import './sass/app.scss';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/card/:id" element={<Card />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
         <Route path="/error" element={<Error />} />
         <Route path="*" element={<Error />} />
       </Routes>
@@ -25,4 +25,3 @@ function App() {
 }
 
 export default App;
-

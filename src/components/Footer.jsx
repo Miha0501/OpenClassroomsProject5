@@ -1,7 +1,6 @@
 import '../sass/footer.scss';
 import logoFooter from '../assets/logo/logoFooter.png';
 
-
 const Footer = () => {
     return (
         <div className='footer'>

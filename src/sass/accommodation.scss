@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.card-page {
+.accommodation-page {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -10,8 +10,8 @@
     @media (max-width: 767px) {
         padding: 1rem;
     }
-
-    .card-header {
+    
+    .accommodation-header {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -23,7 +23,7 @@
         }
     }
 
-    .card-title-tags {
+    .accommodation-title-tags {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -130,7 +130,7 @@
         }
     }
 
-    .card-collapse {
+    .accommodation-collapse {
         display: flex;
         width: 100%;
         gap: 76px;
@@ -151,7 +151,7 @@
             overflow: hidden;
             transition: max-height 0.3s ease, padding 0.3s ease;
 
-            .card-equipments {
+            .accommodation-equipments {
                 list-style-type: none;
                 padding-left: 0;
             }

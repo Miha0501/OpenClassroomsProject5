@@ -12,5 +12,4 @@ const Banner = ({ image, part1, part2 }) => {
 };
 
 export default Banner;
-
 // composant unique stylisé selon la classe 'with-title' pour la page home et about

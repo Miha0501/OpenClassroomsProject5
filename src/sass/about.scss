@@ -1,42 +1,45 @@
 @import './variables.scss';
 
 .about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  flex: 1;
+  padding-inline: 4rem;
+  font-family: $font-family;
+
+  @media (max-width:767px) {
+    padding-inline: 1rem;
+    gap: 0px;
+  }
+
+  .banner {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  }
+
+  .collapse-container {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 38px;
-    flex: 1;
-    padding-inline: 4rem;
-    font-family: $font-family;
+
     @media (max-width:767px) {
-        padding-inline: 1rem;
-        gap:0px;
-    }
-    .banner {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 20px;
-        background-color: rgba(0, 0, 0, 0.2);
-        z-index: 1;
+      gap: 19px;
+      margin: 0;
     }
   }
-    .collapse-container {
-      display: flex;
-      flex-direction: column;
-      flex:1;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      @media (max-width:767px) {
-        gap: 19px;
-        margin:0;
-    }
-    }
-  
-  }
+}
